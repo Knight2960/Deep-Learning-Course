@@ -1,0 +1,16 @@
+import cmath
+a = float(input('a: '))
+b = float(input('b: '))
+c = float(input('c: '))
+d = (b**2) - (4*a*c)
+if d>0:
+    print("此方程有两个不相等的解")
+    x1 = (-b-cmath.sqrt(d))/(2*a) 
+    x2 = (-b+cmath.sqrt(d))/(2*a)
+    print("x1=",x1,"\t","x2=",x2)
+elif d==0:
+    print("此方程只有一个解")
+    x = (-(b/2*a))
+    print("x=",x)
+elif d<0:
+    print('该方程无解')
